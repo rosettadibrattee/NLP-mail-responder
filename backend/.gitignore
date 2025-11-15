@@ -1,0 +1,24 @@
+# --- Python / FastAPI ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env (uv-managed)
+.venv/
+
+# Environment variables
+.env
+
+# uv lock/cache
+uv.lock
+.uv/
+
+# --- Node / Vue (frontend) ---
+node_modules/
+dist/
+
+# --- Editor junk ---
+.DS_Store
+.vscode/
+.idea/
