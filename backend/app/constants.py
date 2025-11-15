@@ -1,3 +1,3 @@
 GPT_PROMPTS = {
-    "NLP": "pmpt_69187394a62c8195aa4c97d5db1b88a20ca2d2e684426d1a6f4e1e8f3f6f5e3b",
+    "NLP": "pmpt_69187394a62c8195aa4c97d5db1b88a20ca2d2e684426d1a",
 }

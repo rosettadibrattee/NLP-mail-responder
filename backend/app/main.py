@@ -3,21 +3,29 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.router_email import router as email_router
 
 app = FastAPI(
-    title="NLP Email Responder API",
+    title="NLP Mail Responder API",
     version="1.0.0",
-    description="Backend service that analyzes incoming emails using NLP and generates contextual replies via GPT."
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # to restrict later
+    allow_origins=["*"],       # to limit later
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(email_router, prefix="/api/v1")
-
-@app.get("/", tags=["Health"])
+@app.get("/")
 async def root():
-    return {"status": "ok", "message": "NLP Email Responder API is running"}
+    return {
+        "status": "ok",
+        "service": "nlp-mail-responder",
+        "docs": "/docs",
+    }
+
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
+app.include_router(email_router, prefix="/api")
