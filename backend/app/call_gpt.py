@@ -8,16 +8,16 @@ client = OpenAI(api_key= oa_key)
 def call_gpt(params: GPTParams) -> str:
     message = params.message
     context = params.context
-    
+
     # Defaults to "NLP", but can be extended for other prompts
-    prompt = params.prompt  
+    prompt = params.prompt or "NLP"
     
     vaiables = {
-        "message": message,
-        "context": context, 
+        "context": context
     }
     
     completion = client.responses.create(
+        input = message,
         prompt={
             "id": GPT_PROMPTS[prompt],
             "variables": vaiables
