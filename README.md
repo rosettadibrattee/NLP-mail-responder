@@ -24,25 +24,18 @@ Deployment: Vercel (frontend), Fly.io (backend)
 
 📦 Project Structure
 
+```txt
 ai-email-responder/
-
  ├── backend/
- 
- │    ├── app/
- 
- │    │    ├── main.py
- 
- │    │    ├── router_email.py
- 
- │    │    ├── schemas.py
- 
- │    │    └── config.py
- 
- │    ├── requirements.txt
- 
+ │   ├── app/
+ │   │   ├── main.py
+ │   │   ├── router_email.py
+ │   │   ├── schemas.py
+ │   │   └── config.py
+ │   ├── requirements.txt
  └── frontend/
- 
-      └── (Vue app)
+     └── (Vue app)
+```
 
 ⚙️ Backend Setup
 cd backend
