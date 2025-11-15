@@ -52,16 +52,15 @@ Run locally:
 uvicorn app.main:app --reload
 
 API available at:
-http://localhost:8000/api/respond
+http://localhost:10000/api/response
 
 🎨 Frontend Setup
 cd frontend
 npm install
 npm run dev
 
-
 Set backend URL inside your frontend .env:
-VITE_API_URL=http://localhost:8000/api
+VITE_API_URL=http://localhost:10000/api
 
 🌍 Deployment
 Frontend: Deploy /frontend on Vercel
