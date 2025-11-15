@@ -23,15 +23,25 @@ AI: OpenAI GPT-4o-mini
 Deployment: Vercel (frontend), Fly.io (backend)
 
 📦 Project Structure
+
 ai-email-responder/
+
  ├── backend/
+ 
  │    ├── app/
+ 
  │    │    ├── main.py
+ 
  │    │    ├── router_email.py
+ 
  │    │    ├── schemas.py
+ 
  │    │    └── config.py
+ 
  │    ├── requirements.txt
+ 
  └── frontend/
+ 
       └── (Vue app)
 
 ⚙️ Backend Setup
