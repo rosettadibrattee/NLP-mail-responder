@@ -12,7 +12,7 @@ const prompt = ref(null)   // always null
 const response = ref("")
 const loading = ref(false)
 
-const API_URL = "http://localhost:8000/api/response"
+const API_URL = "https://nlp-message-backend.onrender.com/api/response"
 
 async function sendRequest() {
   loading.value = true
